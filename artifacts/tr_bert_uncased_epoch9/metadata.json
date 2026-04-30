@@ -1,0 +1,225 @@
+{
+  "model_type": "bert_only",
+  "main_dataset_path": "C:\\Users\\Utku\\Desktop\\projeler\\support-bot-v9\\data_v6.xlsx",
+  "original_column": "kullanici_mesaji",
+  "rewritten_column": "rewrite",
+  "confidence_column": null,
+  "label_column": "kategori",
+  "dataset_rows": 6928,
+  "sample_per_class": null,
+  "label_count": 24,
+  "labels": [
+    "arkadas_adina_ban_itirazi",
+    "ban_ceza_itirazi",
+    "bilgi_sorusu",
+    "davet_odulu",
+    "giris_hesap_erisim",
+    "hediye_bonus_talebi",
+    "hesap_islemleri",
+    "hesap_silme_kapatma",
+    "hile_itirazi",
+    "iade_tazmin_talebi",
+    "kullanici_adi_degistirme",
+    "odeme_cip_yukleme",
+    "olumlu_geri_bildirim",
+    "oyun_adalet_puan",
+    "oyun_nasil_oynanir_yardim",
+    "oyuncu_sikayet_raporlama",
+    "ozel_direkt_mesaj",
+    "ozellik_degisim_talebi",
+    "profil_fotografi_degistirme",
+    "reklam_odulu",
+    "ses_sorunu",
+    "sosyal_hesap_giris_gecis",
+    "teknik_uygulama_sorunu",
+    "toplu_sikayet"
+  ],
+  "bert_model_name": "ytu-ce-cosmos/turkish-base-bert-uncased",
+  "bert_max_length": 104,
+  "train_rewrite_boost": 1.0,
+  "rewrite_boost": 1.0,
+  "training_config": {
+    "epochs": 9,
+    "batch_size": 8,
+    "learning_rate": 1.33e-05,
+    "weight_decay": 0.00110172,
+    "warmup_ratio": 0.0158,
+    "label_smoothing": 0.1319,
+    "test_size": 0.15,
+    "random_state": 42,
+    "merge_labels": true,
+    "save_checkpoints": true,
+    "auto_resume": false,
+    "device": "cuda",
+    "checkpoint_steps": 500,
+    "fp16": true,
+    "bf16": false,
+    "sample_per_class": null
+  },
+  "bert_metrics": {
+    "accuracy": 0.8384615384615385,
+    "macro_f1": 0.8230398204196652,
+    "bert_model_name": "ytu-ce-cosmos/turkish-base-bert-uncased",
+    "resume_mode": "none",
+    "resume_source_checkpoint": null
+  },
+  "classification_report": {
+    "arkadas_adina_ban_itirazi": {
+      "precision": 0.9714285714285714,
+      "recall": 0.9714285714285714,
+      "f1-score": 0.9714285714285714,
+      "support": 35.0
+    },
+    "ban_ceza_itirazi": {
+      "precision": 0.76,
+      "recall": 0.6951219512195121,
+      "f1-score": 0.7261146496815286,
+      "support": 82.0
+    },
+    "bilgi_sorusu": {
+      "precision": 0.64,
+      "recall": 0.64,
+      "f1-score": 0.64,
+      "support": 25.0
+    },
+    "davet_odulu": {
+      "precision": 0.8571428571428571,
+      "recall": 0.9090909090909091,
+      "f1-score": 0.8823529411764706,
+      "support": 33.0
+    },
+    "giris_hesap_erisim": {
+      "precision": 0.4666666666666667,
+      "recall": 0.3888888888888889,
+      "f1-score": 0.42424242424242425,
+      "support": 18.0
+    },
+    "hediye_bonus_talebi": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9230769230769231,
+      "f1-score": 0.9022556390977443,
+      "support": 130.0
+    },
+    "hesap_islemleri": {
+      "precision": 0.8235294117647058,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.8,
+      "support": 18.0
+    },
+    "hesap_silme_kapatma": {
+      "precision": 0.7777777777777778,
+      "recall": 0.875,
+      "f1-score": 0.8235294117647058,
+      "support": 24.0
+    },
+    "hile_itirazi": {
+      "precision": 0.8205128205128205,
+      "recall": 0.9411764705882353,
+      "f1-score": 0.8767123287671232,
+      "support": 34.0
+    },
+    "iade_tazmin_talebi": {
+      "precision": 0.7397260273972602,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.7769784172661871,
+      "support": 66.0
+    },
+    "kullanici_adi_degistirme": {
+      "precision": 0.8571428571428571,
+      "recall": 0.9230769230769231,
+      "f1-score": 0.8888888888888888,
+      "support": 26.0
+    },
+    "odeme_cip_yukleme": {
+      "precision": 0.84375,
+      "recall": 0.84375,
+      "f1-score": 0.84375,
+      "support": 32.0
+    },
+    "olumlu_geri_bildirim": {
+      "precision": 0.90625,
+      "recall": 0.9354838709677419,
+      "f1-score": 0.9206349206349206,
+      "support": 31.0
+    },
+    "oyun_adalet_puan": {
+      "precision": 0.8793103448275862,
+      "recall": 0.816,
+      "f1-score": 0.8464730290456431,
+      "support": 125.0
+    },
+    "oyun_nasil_oynanir_yardim": {
+      "precision": 0.9696969696969697,
+      "recall": 0.8648648648648649,
+      "f1-score": 0.9142857142857143,
+      "support": 37.0
+    },
+    "oyuncu_sikayet_raporlama": {
+      "precision": 0.7868852459016393,
+      "recall": 0.8,
+      "f1-score": 0.7933884297520661,
+      "support": 60.0
+    },
+    "ozel_direkt_mesaj": {
+      "precision": 0.875,
+      "recall": 0.9767441860465116,
+      "f1-score": 0.9230769230769231,
+      "support": 43.0
+    },
+    "ozellik_degisim_talebi": {
+      "precision": 0.9428571428571428,
+      "recall": 0.8918918918918919,
+      "f1-score": 0.9166666666666666,
+      "support": 37.0
+    },
+    "profil_fotografi_degistirme": {
+      "precision": 0.875,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.8235294117647058,
+      "support": 18.0
+    },
+    "reklam_odulu": {
+      "precision": 1.0,
+      "recall": 0.9487179487179487,
+      "f1-score": 0.9736842105263158,
+      "support": 39.0
+    },
+    "ses_sorunu": {
+      "precision": 0.9722222222222222,
+      "recall": 1.0,
+      "f1-score": 0.9859154929577465,
+      "support": 35.0
+    },
+    "sosyal_hesap_giris_gecis": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 18.0
+    },
+    "teknik_uygulama_sorunu": {
+      "precision": 0.75,
+      "recall": 0.631578947368421,
+      "f1-score": 0.6857142857142857,
+      "support": 38.0
+    },
+    "toplu_sikayet": {
+      "precision": 0.717948717948718,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.7466666666666667,
+      "support": 36.0
+    },
+    "accuracy": 0.8384615384615385,
+    "macro avg": {
+      "precision": 0.8242444683804555,
+      "recall": 0.8247530902253817,
+      "f1-score": 0.8230398204196652,
+      "support": 1040.0
+    },
+    "weighted avg": {
+      "precision": 0.8384047618792659,
+      "recall": 0.8384615384615385,
+      "f1-score": 0.8371003059989485,
+      "support": 1040.0
+    }
+  }
+}

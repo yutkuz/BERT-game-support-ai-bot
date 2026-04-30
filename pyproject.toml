@@ -1,0 +1,26 @@
+﻿[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "support-bot-v1"
+version = "1.0.0"
+description = "Support Bot v1 - Turkish BERT support category classifier with optional Gemma rewrite"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "scikit-learn",
+    "numpy",
+    "torch",
+    "transformers",
+    "accelerate",
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "python-multipart",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
