@@ -161,7 +161,7 @@ ollama pull gemma4:e4b
 Model agirlik dosyasi Google Drive uzerinden indirilir:
 
 ```text
-https://drive.google.com/file/d/1LYxtNAmDWiaADGymPMLfIZElo4_GPhxE/view?usp=sharing
+https://drive.google.com/file/d/1TNT_bH225ftQWVYRIQTfF_x0Nw-XlyeR/view?usp=sharing
 ```
 
 Indirdikten sonra dosyayi su konuma koyun:
